@@ -10,7 +10,7 @@ class SpaceItemDecoration(context: Context, dimenRes: Int) : RecyclerView.ItemDe
 
     private val space: Int = context.resources.getDimensionPixelOffset(dimenRes)
 
-    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State?) {
+    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
         super.getItemOffsets(outRect, view, parent, state)
         val position = parent.getChildAdapterPosition(view)
         when (getOrientation(parent)) {

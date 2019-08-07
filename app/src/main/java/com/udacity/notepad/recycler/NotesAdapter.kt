@@ -22,7 +22,7 @@ class NotesAdapter(private val context: Context) : RecyclerView.Adapter<NotesAda
         setHasStableIds(true)
     }
 
-    override fun onAttachedToRecyclerView(recyclerView: RecyclerView?) {
+    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
         refresh()
     }
 
